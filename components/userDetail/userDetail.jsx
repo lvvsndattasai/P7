@@ -5,8 +5,7 @@ import './userDetail.css';
 import axios from 'axios'; // Import Axios
 import TopBar from '../topBar/TopBar';
 
-
-class UserDetail extends React.Component {
+class UserDetails extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -44,9 +43,10 @@ class UserDetail extends React.Component {
   render() {
     const { user } = this.state;
     const topNameValue = user ? `User details for ${user.first_name} ${user.last_name}` : '';
+
     return (
       <div>
-        <TopBar topName={topNameValue} />
+        <TopBar topName={topNameValue} user={user} />
         {user ? (
           <div>
             <Grid container justifyContent="space-between">
@@ -65,9 +65,9 @@ class UserDetail extends React.Component {
                 {user.first_name}
               </Typography>
             </div>
-            
+
             {/* Include other user details here */}
-            
+
             <div className="user-detail-box">
               <Typography variant="body1" className="user-detail-title">
                 Last Name
@@ -111,4 +111,4 @@ class UserDetail extends React.Component {
   }
 }
 
-export default UserDetail;
+export default UserDetails;

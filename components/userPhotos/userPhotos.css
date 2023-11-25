@@ -42,3 +42,88 @@
   font-style: italic;
   color: #7f8c8d;
 }
+.ButtonLink {
+  margin-bottom: 25px;
+}
+
+.UserPhotosHeader {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.photo-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo-item {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.photo-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.user-photo-box {
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #f7f9fc;
+  transition: background-color 0.3s ease;
+}
+
+.user-photo-box:hover {
+  background-color: #eef2f7;
+}
+
+.user-photo-title {
+  font-weight: bold;
+  color: #2980b9;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.user-photo-value {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.loading-text {
+  font-style: italic;
+  color: #7f8c8d;
+}
+
+.comment-dialog {
+  background-color: #f7f9fc;
+}
+
+.comment-dialog-title {
+  font-size: 20px;
+  color: #2c3e50;
+}
+
+.comment-dialog-text {
+  color: #2c3e50;
+}
+
+.comment-textfield {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.comment-dialog-actions {
+  margin-top: 20px;
+}
+
+.add-comment-btn {
+  background-color: #3498db;
+  color: #fff;
+  &:hover {
+    background-color: #2980b9;
+  }
+}

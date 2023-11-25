@@ -1,12 +1,11 @@
 "use strict";
-/* jshint node: true */
 
-var mongoose = require("mongoose");
+const mongoose = require("mongoose");
 
 /**
  * Define the Mongoose Schema for a Comment.
  */
-var commentSchema = new mongoose.Schema({
+const commentSchema = new mongoose.Schema({
   // The text of the comment.
   comment: String,
   // The date and time when the comment was created.
@@ -18,7 +17,7 @@ var commentSchema = new mongoose.Schema({
 /**
  * Define the Mongoose Schema for a Photo.
  */
-var photoSchema = new mongoose.Schema({
+const photoSchema = new mongoose.Schema({
   // Name of the file containing the photo (in the project6/images directory).
   file_name: String,
   // The date and time when the photo was added to the database.
@@ -32,7 +31,7 @@ var photoSchema = new mongoose.Schema({
 /**
  * Create a Mongoose Model for a Photo using the photoSchema.
  */
-var Photo = mongoose.model("Photo", photoSchema);
+const Photo = mongoose.model("Photo", photoSchema);
 
 /**
  * Make this available to our application.
