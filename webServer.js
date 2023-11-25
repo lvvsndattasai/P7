@@ -66,13 +66,10 @@ const SchemaInfo = require("./schema/schemaInfo.js");
 // XXX - Your submission should work without this line. Comment out or delete
 // this line for tests and before submission!
 mongoose.set("strictQuery", false);
-mongoose.connect(
-  "mongodb+srv://dattasai:dattasai@cluster0.erwon.mongodb.net/project6",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  }
-);
+mongoose.connect("mongodb://127.0.0.1/project6", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 // We have the express static module
 // (http://expressjs.com/en/starter/static-files.html) do all the work for us.
